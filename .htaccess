@@ -1,0 +1,16 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} !^on$
+RewriteRule (.*) https://ctf.rickertcorp.com/$1 [R,L]
+
+RewriteRule ^index/$ index.html
+RewriteRule ^index$ index.html
+
+RewriteRule ^boffin_night/$ boffin_night.html
+RewriteRule ^boffin_night$ boffin_night.html
+
+RewriteRule ^cyber_security/$ cyber_security.html
+RewriteRule ^cyber_security$ cyber_security.html
+
+RewriteRule ^news/$ news.html
+RewriteRule ^news$ news.html
